@@ -22,11 +22,11 @@ hbs.registerHelper('message', (text) => {
 })
 
 //Middleware is used in this code:
-app.use((request, response, next) => {
+/*app.use((request, response, next) => {
 	response.render('maintenance.hbs')
 	var log = 'The site is down for maintenance'
 	// next();
-});
+});*/
 
 app.get('/', (request, response) => {
 	response.send({
